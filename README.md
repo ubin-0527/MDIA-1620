@@ -1,15 +1,11 @@
 # MDIA-1620
 Created on **Sep 12**
 > "aha" moments
-- Markdown allows you to "decorate" your notes
-- Being able to command your way through the files
-- Finally figured out what the black box(terminal) does
+- Javascript allows you to create interactive features for your website.
+- Github is an interface of Git.
+- You can make changes of your code and upload the changes to its original destination using git add & git push
 > things that are still unclear
-- When and where markdowns will be used
-- What version control is and how it is done
+- If and how the codes we learned today is going to create interactive features for websites.
+- What the purpose is to write javascript codes on VS Code, then node the code on terminal.
 > word for how you're feeling
-- Confused a little
->Learnings from 3-2-1
-- Version control allows you to go back to the previous "working" version of your coding
->![Croissant sandwich](https://simplyhomecooked.com/wp-content/uploads/2022/06/croissant-sandwich-2.jpg)
-Hello hihi
+- Relieved.
