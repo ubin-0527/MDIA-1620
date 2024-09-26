@@ -36,7 +36,8 @@ let horseAgeIn10Years = horseAge + 10;
 let horseAgeIn20Years = horseAgeIn10Years + 10;
 
 console.log(horseAgeIn20Years);
-let horseIntroduction = " is the name of my horse"
+let horseIntroduction = " is the name of my horse and it's nickname is ";
+
 // let rentIntroduction = " it costs " + STABLE_MONTHLY_FEE + " to board " + horseName;
 // let stableIntroduction = "Welcome to " + horseName + "'s stable";
 let rentIntroduction = `It costs ${STABLE_MONTHLY_FEE} to board ${horseName}`;
@@ -45,6 +46,15 @@ console.log(horseName + horseIntroduction);
 console.log(rentIntroduction);
 console.log(stableIntroduction);
 console.log(rentIntroduction);
+
+let horseNickname = "Happy";
+horseName = "Potato";
+console.log(horseNickname);
+console.log(horseName);
+console.log(horseName + horseIntroduction + horseNickname + ". He's a " + horseNickname + horseName);
+
+console.log("If you sign up for a 3-months stay, you can save " + ((STABLE_MONTHLY_FEE*3)*0.10) + " dollars.");
+
 
 
 
