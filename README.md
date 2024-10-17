@@ -1,11 +1,11 @@
 # MDIA-1620
-Created on **Sep 12**
-> "aha" moments
-- Javascript allows you to create interactive features for your website.
-- Github is an interface of Git.
-- You can make changes of your code and upload the changes to its original destination using git add & git push
-> things that are still unclear
-- If and how the codes we learned today is going to create interactive features for websites.
-- What the purpose is to write javascript codes on VS Code, then node the code on terminal.
-> word for how you're feeling
-- Relieved.
+Created on **Oct 10**
+>3-Confusing-Things
+1. When does index become useful in real life?
+2. When using charAt, do I have to use "let word" right before console.logging charAt to establish which word I want it to interpret? Or can I ask it to charAt something from the earlier code?
+3. Is .length the one that allows shopping websites to show their users how many products they have?
+
+>3-Solid-Understandings
+1. Array is a fast and easy way to lay out multiple data.
+2. Index numbers don't represent quantity of things, it's just another way to count.
+3. There are more than one ways to achieve your goal through coding, you can pick whichever one suits you and the situation best. 
