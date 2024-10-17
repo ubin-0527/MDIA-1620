@@ -115,3 +115,79 @@ console.log(isHorseThreeInStables);
 // - 3 things you have a solid understanding of
 // (optional)Analogies that you use to think about things (ex.gif)t45
 //Midterm is going to be about your stables. Open cheatsheets. some multiple questions.
+
+
+//Lesson-5 Code
+if (true) {
+    console.log(":) this is getting output because the expression above evaled true")
+};
+if (3 < 4) {
+    console.log("this is also true")
+};
+if (3 > 4) {
+    console.log("this is false, so it won't show up")
+};
+if (0) {
+    console.log("this won't run because 0=false")
+};
+if (1) {
+    console.log("this will run, because any number greater than 0 is true boolean")
+};
+if (isHorseInStable) {
+    console.log("this will probably run, but I don't remember what I did with ishorseinstable")
+};
+//turns out, my horse is not in stable, so I'll fix it now
+
+isHorseInStable = true;
+
+if (isHorseInStable) {
+    console.log("this should run now, because I just edited my previous statement")
+};
+
+if (isHorseInStable === true) {
+    console.log (`${horseName} is inside`)
+};
+
+if (isHorseInStable === true) {
+    console.log (`${horseName} is inside`)
+} else {
+    console.log (`${horseName} is outside`)
+}; //this would run if I set isHorseInStable = false, node stables.js would tell me that Potato is outside
+
+//below is chain statement
+if (horseAge === 8) {
+    console.log ("My horse is old")
+} else if (horseAge < 3 ) {
+    console.log ("My horse is a baby")
+} else {
+    console.log("My horse is a kid")
+};
+//because the first two statements are false, the last else statement only stands
+// Relation operators:
+// === : equal to, !== : not equal to, >= : greater than or equal to
+//Comparison Operators example
+let balesOfHay = 5;
+if (balesOfHay < 10) {
+    console.log("Order more hay, Potato is getting hungry!")
+} else {
+    console.log("There is enough hay to feed Potato")
+}; // node stables.js will say: "Order more hay, Potato is getting hungry!"
+
+if (horseName !== "Potato") {
+    console.log (`${horseName} has come to visit the stables!`)
+} else {
+    console.log (horseName + " is lonely")
+};
+
+//logical operators: 
+// && : "AND", all conditions must be true
+// || : "OR", one or more conditions must be true
+// ! : "Negation", runs if the condition is false (can substitute === false)
+if (! 3 < 4) {
+    console.log (`${horseName} is outside`)
+} else {
+    console.log (`${horseName + "is inside"}`)
+}
+
+
+
