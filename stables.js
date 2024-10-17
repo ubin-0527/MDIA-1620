@@ -183,11 +183,18 @@ if (horseName !== "Potato") {
 // && : "AND", all conditions must be true
 // || : "OR", one or more conditions must be true
 // ! : "Negation", runs if the condition is false (can substitute === false)
-if (! 3 < 4) {
+if (!isHorseInStable) {
     console.log (`${horseName} is outside`)
 } else {
-    console.log (`${horseName + "is inside"}`)
+    console.log (`${horseName + " is inside"}`)
 }
 
-
+//Lab 5a
+if (2 < 1) {
+    console.log (`${horseName} is inside the stable. He is alive and well.`)
+} else if(horseAge = 5) {
+    console.log (`${horseName} is outside. He is chasing after the neighbor kid.`)
+} else {
+    console.log (`${horseName} + "is neither inside nor outside, because half of his body is peeking out the window.`)
+}
 
