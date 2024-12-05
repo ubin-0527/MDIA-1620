@@ -198,3 +198,131 @@ if (2 < 1) {
     console.log (`${horseName} + "is neither inside nor outside, because half of his body is peeking out the window.`)
 }
 
+// Lesson-7
+
+
+let joinedNames = horseNames.join();
+console.log("My horses are named " + joinedNames);
+// My horses are named Potato, Gaga, Thor
+
+console.log(horseAges);
+
+// Resusability
+let names = ["Charlie", "Strawberry", "Beans"];
+let ages = [5, 2, 10];
+
+function logHorseAge(horse) {
+    console.log(names[horse] + " is " + ages[horse] + "!");
+}
+
+logHorseAge(0);
+logHorseAge(2); 
+logHorseAge(1);
+
+function logHorseNicknames(index) {
+    console.log(horseNames[index] + "'s nickname is " + horseNicknames[index]);
+}
+
+//logHorseNicknames(1);
+//logHorseNicknames(2);
+
+function logHorseNicknames(horse, friend) {
+    const string = `${horseNames[horse]}'s nickname is ${horseNicknames[horse]}, and they have a friend named ${horseNames[friend]}, who is nicknamed ${horseNicknames[friend]}!`;
+    console.log(string);
+}
+
+logHorseNicknames(1, 2);
+
+// " " - strings;
+// ` ` (backticks) - template literals;
+// [ ] - arrays ONLY;
+// const arr = [1,2,3];
+// arr[0] = 1;
+// ( ) (parentheses) - function parameters, conditional statements;
+// { } - functino bodies, conditional bodies, used with ${} for template literal insertion;
+
+//function payMe(rent = STABLE_MONTHLY_FEE, demand) {
+//    console.log(`Pay me $${rent}! ${demand}!`)
+//}
+
+//payMe(200, "right now, or else");
+//payMe(undefined, "Pretty please");
+
+//function payMe(rent, discount) {
+//    if (discount) {
+//        let amount = rent - discount
+//    } else {
+//        let amount = rent;
+//    }
+//}
+//console.log(payMe(100, 45));
+//undefined!
+
+function payMe(rent, discount) {
+    if (discount) {
+        return rent - discount;
+    } else {
+        return rent;
+    }
+}
+console.log(payMe(100,45));
+//55
+//works this time because of return statement
+
+function tidyLocation(horse) {
+    if(areHorsesInStable[horse]) {
+        return " is inside.";
+    }
+
+    return " is outside."
+}
+console.log(horseNames[0] + tidyLocation(0));
+//Potato is outside.
+
+//Lesson-10
+let blue = {
+    name: "Blue",
+    age: 3,
+    nickname: "Pretty",
+    introduction: function() { //this is still a method
+        console.log(`This is ${this.name}! Their nickname is ${this.nickname}!`);
+    },
+};
+console.log(blue.introduction()); //you have to add () because its function
+console.log(blue.nickname);
+
+
+function introduction(horse) {
+    console.log(`This is ${horse.name}! Their nickname is ${horse.nickname}`)
+}
+
+blue.favoriteSnack = "Raspberries";
+blue.STABLE_MONTHLY_FEE = 125;
+blue.rentNotice = function() {
+    console.log(`${this.name}'s monthly rent of $${this.STABLE_MONTHLY_FEE} is due`);
+};
+
+console.log(blue.rentNotice());
+console.log(blue.name + " 's monthly rent is " + blue.STABLE_MONTHLY_FEE);
+
+//constructor
+function Horse(name, nickname, faveSnack, monthlyRent, isInside, age, color) {
+    this.name = name;
+    this.nickname = nickname; 
+    this.faveSnack = faveSnack;
+    this.STABLE_MONTHLY_FEE = monthlyRent;
+    this.isInside = isInside;
+    this.age = age;
+    this.color = color;
+    this.introduction = function() {
+        console.log(`This is ${this.name}. their nickname is ${this.nickname}!`);
+    }
+    this.rentNotice = function (daysUntilDue) {
+        console.log(`&{this.name}'s rent is due in ${daysUntilDue}, and is $${STABLE_MONTHLY_FEE}! Please pay promptly!`);
+    }
+}
+
+let blue = new Horse("Blue", "Pretty", "Blueberries", 125, true, 3, blue);
+let Potato = new Horse("Potato", "Happy", "Strawberry", 125, true, 3, brown);
+
+console.log(blue);
